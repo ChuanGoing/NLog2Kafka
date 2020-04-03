@@ -5,7 +5,6 @@ This is a toolkit for logging Nlog to kafka. Note: Before starting to use, pleas
 这是一个NLog日志写入kafka的工具包，使用之前注意调用Initialize.UseKafka()进行初始化，否则将会提示找不到"KafkaTarget"类型。
 
 NLog.config like this demo:
-
 <?xml version="1.0" encoding="utf-8" ?>
 <nlog autoReload="true" xmlns="http://www.nlog-project.org/schemas/NLog.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   throwExceptions="true" throwConfigExceptions="true" internalLogLevel="Trace" >
@@ -23,3 +22,4 @@ NLog.config like this demo:
     <logger name="*" minlevel="Debug" writeTo="kafka" />
   </rules>
 </nlog>
+
